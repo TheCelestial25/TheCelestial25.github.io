@@ -70,12 +70,12 @@ img {vertical-align: middle;}
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
 
@@ -144,10 +144,10 @@ img {vertical-align: middle;}
 									</header>
 								</div>
 								<div class="4u 12u$(medium)">
-									<p>I'm a 20 year old student pursuing engineering in the field of Information Technology at NIT-RR.</p> <p>Thanks for visting my personal webpage. This is my first attempt at Web Development so pardon me for any mistakes committed.</p>
+									<p>I'm a 20 year old student pursuing engineering in the field of Information Technology at NIT-RR.</p> <p>Thanks for visting my personal webpage.</p>
 								</div>
 								<div class="4u$ 12u$(medium)">
-									<p>I'm basically an introvert who delves into content writing on quora to express his thoughts. As a person in IT field, I am curious about latest tech advancements and keep learning. I am also interested in Programming and Entrepreneurship and I wish to own a successful start-up one day.</p>
+									<p>I'm basically an introvert who delves into content writing on quora to express his thoughts. I am interested in Programming and Entrepreneurship and I wish to own a successful start-up one day.</p>
 								</div>
 							</div>
 						</div>
@@ -179,21 +179,39 @@ img {vertical-align: middle;}
 			<!-- Three -->
 				<section id="three" class="spotlight style3 left">
 					<span class="image fit main bottom"><img src="images/warrior.jpg" alt="" /></span>
-					<div class="content">
-						<header>
+					<div class="content" style="margin-top: 2px;">
 							<h2>Skills & Abilities</h2>
-						</header>
-						<p>I'm learning things regarding IT related stuff. I am a bit acquianted with Java, C++, MySQL, JavaScript, HTML, CSS, Python (Flask & Django) and ReactJS. Currently involved in Competitive Programming and Web Development. Have a look at my Hackerrank Profile ->
+						<p>I believe in improving myself each day. Currently involved in Web Development, Competitive Coding and Open Source contributions.
 						<ul class="actions">
 							<li><a href="https://www.hackerrank.com/TheCelestial_25" class="button">Hackerrank Profile</a></li>
+							<br> <br>
+							<li><a href="https://github.com/TheCelestial25" class="button">Github</a></li>
 						</ul>
-						I don't predominantly adroitly gravitate towards aggrandizing my text with eloquence par excellence succinctly that presents a testimony to opulent vocabulary. But yeah, I do have a good command over English! <b>;p</b> 
+						I don't predominantly adroitly gravitate towards aggrandizing my text with eloquence par excellence succinctly that presents a testimony to opulent vocabulary. But yeah, I do have a good command over English! <b>;p</b>
 					</div>
 					<a href="#four" class="goto-next scrolly">Next</a>
 				</section>
 
+				<section id="four" class="spotlight style2 right">
+					<span class="image fit main"><img src="images/hack.jpg" alt="" /></span>
+					<div class="content">
+							<h2>Technical Details</h2>
+						<ul><li>Languages: Java, JavaScript, Python, C++</li>
+							<li>Databases: MySQL, SQLite, PostgreSQL</li>
+							<li>Frameworks: Flask, React, Django</li>
+							<li>Resposibilities discharged: Manager, Team Codeutsav 3.0 (Dec18 onwards)</li>
+							<li>Won special category prize of USD150 @Hackabit, BIT Mesra</li>
+						</ul>
+						<ul class="actions">
+							<li><a href="-microblog.herokuapp.com/index" class="button">Microblog</a></li>
+							<li><a href="#" class="button">eStore</a></li>
+						</ul>
+						<a href="#five" class="goto-next scrolly">Next</a>
+					</div>
+				</section>
+
 			<!-- Four -->
-				<section id="four" class="wrapper style1 special fade-up">
+				<section id="five" class="wrapper style1 special fade-up">
 					<div class="container">
 						<header class="major">
 							<h2>Hobbies</h2>
@@ -258,9 +276,9 @@ img {vertical-align: middle;}
 <br>
 
 <div style="text-align:center">
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
 </div>
 
 <script>
@@ -272,14 +290,14 @@ function showSlides() {
     var slides = document.getElementsByClassName("mySlides");
     var dots = document.getElementsByClassName("dot");
     for (i = 0; i < slides.length; i++) {
-       slides[i].style.display = "none";  
+       slides[i].style.display = "none";
     }
     slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}    
+    if (slideIndex > slides.length) {slideIndex = 1}
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
-    slides[slideIndex-1].style.display = "block";  
+    slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
     setTimeout(showSlides, 3000); // Change image every 2 seconds
 }
@@ -294,7 +312,7 @@ function showSlides() {
 				</section>
 
 			<!-- Five -->
-				<section id="five" class="wrapper style2 special fade">
+				<section id="six" class="wrapper style2 special fade">
 					<div class="container">
 						<header>
 							<h2>Want me to reach out to you?</h2>
