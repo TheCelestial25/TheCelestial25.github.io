@@ -83,6 +83,62 @@ img {vertical-align: middle;}
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
 }
+/*Chatbot */
+.open-button {
+	z-index: 100;
+  background-color: #0650c9;
+  color: white;
+  padding: 16px 20px;
+  border: solid 2px white;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+	font-weight: bold;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 28px;
+  border: none;
+  z-index: 101;
+}
+
+/* Add styles to the form container */
+.form-container {
+  width: 300px;
+	height: 450px;
+  padding: 10px;
+  background-color: black;
+}
+
+
+/* Set a style for the submit/send button */
+.form-container .bttu {
+  color: white;
+	font-weight: bold;
+  padding: 16px 20px;
+  border: solid 2px white;
+  cursor: pointer;
+  width: 100%;
+	bottom: 0;
+  opacity: 0.9;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .bttu:hover, .open-button:hover {
+  opacity: 1;
+}
 </style>
 	</head>
 	<body class="landing">
@@ -117,8 +173,30 @@ img {vertical-align: middle;}
 					</nav>
 				</header>
 			-->
+			<!--Chatbot -->
+			<button class="open-button" onclick="openForm()">Chat</button>
+			<div class="chat-popup" id="myForm">
+				<div class="form-container">
+					<iframe
+				    allow="microphone;"
+				    width="280"
+				    height="360"
+				    src="https://console.dialogflow.com/api-client/demo/embedded/baa2f380-26f9-4452-9f00-838bfe1d7b9d">
+				</iframe>
+			    <button type="button" class="bttu cancel" onclick="closeForm()">Close</button>
+			  </div>
+			</div>
+			<script>
+			function openForm() {
+			  document.getElementById("myForm").style.display = "block";
+			}
 
+			function closeForm() {
+			  document.getElementById("myForm").style.display = "none";
+			}
+			</script>
 			<!-- Banner -->
+
 				<section id="banner">
 					<div class="content">
 						<header>
@@ -187,7 +265,7 @@ img {vertical-align: middle;}
 							<br> <br>
 							<li><a href="https://github.com/TheCelestial25" class="button">Github</a></li>
 						</ul>
-						I don't predominantly adroitly gravitate towards aggrandizing my text with eloquence par excellence succinctly that presents a testimony to opulent vocabulary. But yeah, I do have a good command over English! <b>;p</b>
+						I don't predominantly adroitly gravitate towards aggrandizing my text with eloquence par excellence succinctly that presents a testimony to opulent vocabulary. <b>;p</b>
 					</div>
 					<a href="#four" class="goto-next scrolly">Next</a>
 				</section>
