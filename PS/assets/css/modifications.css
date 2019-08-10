@@ -171,6 +171,13 @@ img {vertical-align: middle;}
   animation-duration: 1.5s;
 }
 
+.fade.popover {
+  -webkit-animation-name: none;
+  -webkit-animation-duration: none;
+  animation-name: none;
+  animation-duration: none;
+}
+
 @-webkit-keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
