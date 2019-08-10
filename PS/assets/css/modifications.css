@@ -204,16 +204,31 @@ img {vertical-align: middle;}
   width: 112px;
   opacity: 1;
   position: fixed;
-  bottom: 10px;
+  bottom: 37px;
   right: 10px;
 	font-weight: bold;
+}
+
+.open-button-label {
+  z-index: 100;
+  background-color: #0650c9;
+  color: white;
+  border: solid 2px white;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 10px;
+  right: 28px;
+  width: 100px;
+  height: 40px;
+  font-weight: bold;
 }
 
 /* The popup chat - hidden by default */
 .chat-popup {
   display: none;
   position: fixed;
-  bottom: 20px;
+  bottom: 10px;
   right: 10px;
   border: none;
   z-index: 101;
@@ -250,7 +265,12 @@ img {vertical-align: middle;}
   opacity: 1;
 }
 
-.open-button:hover {
+
+#hoverchat:hover > .open-button-label {
+  opacity: 1;
+}
+
+#hoverchat:hover > .open-button {
   width: 150px;
   height: 200px;
   transition: height 1s, width 1s;
@@ -381,3 +401,5 @@ img {vertical-align: middle;}
   background-color: black;
   border-radius: 50%; 
 }
+
+/* Modifications to dialogflow chat widget */

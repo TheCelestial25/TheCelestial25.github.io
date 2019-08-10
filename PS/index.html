@@ -47,14 +47,16 @@
 				</ul>
 			</div>
 			<!--Chatbot -->
-			<image src="images/final.gif" class="open-button" onclick="openForm()" title="Chat!"/>
+			<div id="hoverchat"><image src="images/final.gif" class="open-button" onclick="openForm()" title="Chat!"/>
+			<button type="button" class="bttu open-button-label" onclick="openForm()">Chat</button></div>
 			<div class="chat-popup" id="myForm">
 				<div class="form-container">
 					<iframe
 					    allow="microphone;"
 					    width="280"
 					    height="360"
-					    src="https://console.dialogflow.com/api-client/demo/embedded/ef379b5f-b70f-46e8-8e4a-90e9424d534e">
+					    src="https://console.dialogflow.com/api-client/demo/embedded/ef379b5f-b70f-46e8-8e4a-90e9424d534e"
+					    >
 					</iframe>
 			    <button type="button" class="bttu cancel" onclick="closeForm()">Close</button>
 			  </div>
